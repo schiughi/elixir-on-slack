@@ -1,18 +1,8 @@
 defmodule Salieri do
-  @moduledoc """
-  Documentation for Salieri.
-  """
 
-  @doc """
-  Hello world.
+  use Application
 
-  ## Examples
-
-      iex> Salieri.hello
-      :world
-
-  """
-  def hello do
-    :world
+  def start(_type, _args) do
+    Salieri.Supervisor.start_link
   end
 end
