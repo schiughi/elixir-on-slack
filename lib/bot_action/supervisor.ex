@@ -9,6 +9,6 @@ defmodule BotAction.Supervisor do
         :respond -> BotAction.Action.respond(trigger, message, slack)
         :hear -> BotAction.Action.hear(trigger, message, slack)
       end
-    )
+    end)
   end
 end

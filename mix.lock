@@ -1,0 +1,8 @@
+%{"exjsx": {:hex, :exjsx, "3.1.0", "d419162cb2d5be80070835c2c2b8c78c8c45907706c991d23f3750dae506d1e9", [], [{:jsx, "~> 2.4.0", [hex: :jsx, repo: "hexpm", optional: false]}], "hexpm"},
+  "hackney": {:hex, :hackney, "1.3.2", "43bd07ab88753f5e136e38fddd2a09124bee25733b03361eeb459d0173fc17ab", [], [{:idna, "~> 1.0.2", [hex: :idna, repo: "hexpm", optional: false]}, {:ssl_verify_hostname, "~> 1.0.5", [hex: :ssl_verify_hostname, repo: "hexpm", optional: false]}], "hexpm"},
+  "httpoison": {:hex, :httpoison, "0.7.5", "7f4a1dc1245f6a4a7d944786b75a44c94056bd54830299229e4b57fd75cb9daa", [], [{:hackney, "~> 1.3.1", [hex: :hackney, repo: "hexpm", optional: false]}], "hexpm"},
+  "idna": {:hex, :idna, "1.0.3", "d456a8761cad91c97e9788c27002eb3b773adaf5c893275fc35ba4e3434bbd9b", [], [], "hexpm"},
+  "jsx": {:hex, :jsx, "2.4.0", "fb83830ac15e981b6ce310b645324ceecd01b1e0847d23921c33df829de5d2db", [], [], "hexpm"},
+  "slack": {:hex, :slack, "0.2.0", "295b8e4830eca99b04ded9ea7ed1359312a46c0f867872f80bc05da2572517ff", [], [{:exjsx, "~> 3.1.0", [hex: :exjsx, repo: "hexpm", optional: false]}, {:httpoison, "~> 0.7.0", [hex: :httpoison, repo: "hexpm", optional: false]}], "hexpm"},
+  "ssl_verify_hostname": {:hex, :ssl_verify_hostname, "1.0.6", "45866d958d9ae51cfe8fef0050ab8054d25cba23ace43b88046092aa2c714645", [], [], "hexpm"},
+  "websocket_client": {:git, "https://github.com/jeremyong/websocket_client.git", "9a6f65d05ebf2725d62fb19262b21f1805a59fbf", []}}

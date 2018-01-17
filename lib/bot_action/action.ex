@@ -12,4 +12,8 @@ defmodule BotAction.Action do
 
   def respond(_, _, _) do
   end
+
+  defp send_message(text, channel, slack) do
+    Slack.send_message(text, channel, slack)
+  end
 end
