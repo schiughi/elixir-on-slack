@@ -5,7 +5,7 @@ defmodule Salieri.Bot do
   @doc """
   接続に成功したとき
   """
-  def on_connect(slack, state) do
+  def handle_connect(slack, state) do
     IO.puts "connected as #{slack.me.name}"
     { :ok, state }
   end
@@ -13,7 +13,7 @@ defmodule Salieri.Bot do
   @doc """
   メッセージを受け取ったとき
   """
-  def on_receive(message = %{ type: "message", text: _ }, slack, state) do
+  def handle_mesage(message = %{ type: "message", text: _ }, slack, state) do
     trigger = String.split(message.text, ~r{ |　})
 
     case String.starts_with?(message.text, "<@#{slack.me.id}>: ") do
@@ -23,7 +23,7 @@ defmodule Salieri.Bot do
     end
   end
 
-  def on_receive(_message, _slack, state) do
+  def handle_mesage(_message, _slack, state) do
     { :ok , state }
   end
 end
